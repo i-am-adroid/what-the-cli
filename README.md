@@ -1,6 +1,6 @@
 # what-the-cli 🤨
 
-> A tiny CLI experiment where the README is allowed to be suspiciously self-aware.
+> A tiny CLI experiment where the README is allowed to be suspiciously self-aware. Is powered by ChatGPT and/or Claude and/or Gemini. Depends on who has the most tokens left.
 
 **what-the-cli** is a playground for building command-line tools, experimenting with automation, and generally asking the important question:
 
