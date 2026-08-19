@@ -1,0 +1,13 @@
+{
+  "name": "what-the-cli",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A tiny CLI playground for experimenting with command-line tools.",
+  "bin": {
+    "what-the-cli": "src/cli.js"
+  },
+  "scripts": {
+    "start": "node src/cli.js"
+  },
+  "license": "UNLICENSED"
+}
