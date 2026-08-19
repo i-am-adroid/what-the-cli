@@ -1,25 +1,15 @@
 #!/usr/bin/env node
 
 const args = process.argv.slice(2);
-
-const commands = {
-  help() {
-    console.log(`what-the-cli\n\nUsage:\n  what-the-cli <command>\n\nCommands:\n  hello   Say hello\n  about   Explain what this project is\n  help    Show this help message`);
-  },
-
-  hello() {
-    console.log("Hello from what-the-cli 👋");
-  },
-
-  about() {
-    console.log("what-the-cli is a small CLI playground for experimenting with command-line tools.");
-  },
-};
+const { commands, printHelp } = require("./commands");
 
 const command = args[0] || "help";
+const commandArgs = args.slice(1);
 
-if (commands[command]) {
-  commands[command]();
+if (command === "help") {
+  printHelp();
+} else if (commands[command]) {
+  commands[command](commandArgs);
 } else {
   console.error(`Unknown command: ${command}`);
   console.error("Run 'what-the-cli help' to see available commands.");
